@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://b5by34hebhin"]
+
+[ext_resource type="Script" uid="uid://7xaa7h5euc5c" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://c8f8yft12jf8c" path="res://tile.tscn" id="1_ig7tw"]
+
+[node name="Main" type="Control" unique_id=1582371713]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0xm2m")
+tile_scene = ExtResource("1_ig7tw")
+
+[node name="Background" type="ColorRect" parent="." unique_id=883605177]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.10980392, 0.12156863, 0.12156863, 0.5176471)
+
+[node name="Grid" type="GridContainer" parent="Background" unique_id=2097001924]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -192.0
+offset_top = -192.0
+offset_right = 192.0
+offset_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 4
+
+[node name="Tile" parent="Background/Grid" unique_id=2004239971 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile2" parent="Background/Grid" unique_id=186096329 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile3" parent="Background/Grid" unique_id=1764214690 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile4" parent="Background/Grid" unique_id=1689389411 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile5" parent="Background/Grid" unique_id=80415407 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile6" parent="Background/Grid" unique_id=920067819 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile7" parent="Background/Grid" unique_id=118358397 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile8" parent="Background/Grid" unique_id=1104368256 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile9" parent="Background/Grid" unique_id=1025969214 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile10" parent="Background/Grid" unique_id=1486515478 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile11" parent="Background/Grid" unique_id=967893017 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile12" parent="Background/Grid" unique_id=1011615822 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile13" parent="Background/Grid" unique_id=1499447743 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile14" parent="Background/Grid" unique_id=2092286022 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile15" parent="Background/Grid" unique_id=2079101674 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="Tile16" parent="Background/Grid" unique_id=1749813969 instance=ExtResource("1_ig7tw")]
+layout_mode = 2
+script = null
+
+[node name="TileContainer" type="Control" parent="Background" unique_id=1203204780]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=1018909250]
+layout_mode = 1
+offset_right = 57.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 40
+text = "Score:0"
+
+[node name="GameOverLabel" type="Label" parent="." unique_id=1237756953]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -214.5
+offset_top = -56.5
+offset_right = 214.5
+offset_bottom = 56.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8235294, 0.15686275, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Game Over!
+Press Space to Restart"
+horizontal_alignment = 1
